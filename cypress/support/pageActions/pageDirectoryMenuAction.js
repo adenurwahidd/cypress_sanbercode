@@ -35,17 +35,26 @@ export class pageDirectoryMenuAction {
         cy.xpath(directoryElementsLocator.data.employeeName_locator).clear().type(empName)
         cy.get('.oxd-autocomplete-dropdown').should('be.visible').contains(empNameAuto).click()
         cy.xpath(directoryElementsLocator.data.jobTitile_locator).click()
-        cy.contains(jobTitle).click();
+        cy.contains(jobTitle).click()
 
         cy.get(directoryElementsLocator.data.location_locator).click()
-        cy.contains(location).click();
+        cy.contains(location).click()
 
         cy.xpath(directoryElementsLocator.data.search_locator).click()
+
     }
 
     clickResetButton(){
+        cy.xpath(directoryElementsLocator.data.employeeName_locator).clear().type('Peter')
+        cy.get('.oxd-autocomplete-dropdown').should('be.visible').contains("Peter Mac Anderson").click()
+        cy.xpath(directoryElementsLocator.data.jobTitile_locator).click()
+        cy.contains("Chief Financial Officer").click()
+
+        cy.get(directoryElementsLocator.data.location_locator).click()
+        cy.contains("Canadian Regional HQ").click()
         cy.xpath(directoryElementsLocator.data.reset_locator).click()
-         cy.url().should('include','auth/login')
+
+        cy.xpath(directoryElementsLocator.data.employeeName_locator).should('be.empty')
     }
 
     searchWithInvalidEmpployeeName(employeeName) {

@@ -53,7 +53,7 @@ describe('Directory Menu', () => {
     })
 
     //TC_008_Reset Button
-    it('TC 008 - Reset Button', () => {
+    it.only('TC 008 - Reset Button', () => {
         directoryMenuActions.VisitDirectoryMenu() 
         directoryMenuActions.clickResetButton()    
     })
