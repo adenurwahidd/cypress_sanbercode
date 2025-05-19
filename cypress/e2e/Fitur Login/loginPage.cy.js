@@ -28,7 +28,6 @@ describe('Login', () => {
         loginActions.InputPassword('admin123')
     })
 
-    
     //TC 005 Input with valid credential
     it('TC 005 - Login Successful', () => {
         loginActions.Login("admin","admin123")

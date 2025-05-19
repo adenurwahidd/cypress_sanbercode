@@ -41,7 +41,6 @@ export class pageDirectoryMenuAction {
         cy.contains(location).click()
 
         cy.xpath(directoryElementsLocator.data.search_locator).click()
-
     }
 
     clickResetButton(){

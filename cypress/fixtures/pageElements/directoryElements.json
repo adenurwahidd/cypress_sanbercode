@@ -1,5 +1,6 @@
 {
     "data" : {
+
        "directoryMenu_locator": "body > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > aside:nth-child(1) > nav:nth-child(1) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(9) > a:nth-child(1)",
        "employeeName_locator": "//input[@placeholder='Type for hints...']",
        "jobTitile_locator": "//body/div[@id='app']/div[@class='oxd-layout orangehrm-upgrade-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']/div[@class='orangehrm-background-container']/div[@class='oxd-table-filter']/div[@class='oxd-table-filter-area']/form[@class='oxd-form']/div[@class='oxd-form-row']/div[@class='oxd-grid-3']/div[2]/div[1]/div[2]/div[1]/div[1]",
@@ -9,5 +10,6 @@
        "msgInvalidName_locator": "//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']",
        "msgSearchResult_locator": ".orangehrm-horizontal-padding > .oxd-text",
        "autoCompleteEmp_locator": "'.oxd-autocomplete-dropdown > *'"
+   
     }
 }

@@ -5,9 +5,8 @@ import { pageForgotPasswordAction } from "../../support/pageActions/pageForgotPa
 const forgotPasswordAction = new pageForgotPasswordAction
 
 describe('Forgot Password', () => {
+    
     //TC 001 Verify forgot password button
-    
-    
     it('TC 001 - Verify Forgot Password Page', () => {
         forgotPasswordAction.VisitForgotPasswordPage()       
     })

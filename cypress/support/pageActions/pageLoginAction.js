@@ -1,6 +1,5 @@
 const logiElementsLocator = require('../../fixtures/pageElements/loginElements.json')
 export class pageLoginActions{
-
     //Untuk mengunjungi login page
     VisitLoginPage(){
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')

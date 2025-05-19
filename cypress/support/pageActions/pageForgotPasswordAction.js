@@ -1,6 +1,6 @@
 const forgotElementsLocator = require('../../fixtures/pageElements/forgotPasswordElements.json')
-export class pageForgotPasswordAction{
 
+export class pageForgotPasswordAction{
     VisitForgotPasswordPage(){
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
         cy.xpath(forgotElementsLocator.data.forgot_locator).should('be.visible')

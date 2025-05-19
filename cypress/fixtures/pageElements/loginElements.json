@@ -1,8 +1,10 @@
 {
     "data" : {
+
         "username_locator" : ":nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input",
         "password_locator" :":nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input",
         "submit_locator" : "button[type='submit']",
         "messageLogin_locator" :"//p[@class='oxd-text oxd-text--p oxd-alert-content-text']"
+        
     }
 }
